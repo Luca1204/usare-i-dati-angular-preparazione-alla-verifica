@@ -5,11 +5,13 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './container.component.html',
   styleUrls: ['./container.component.css']
 })
+
+
 export class ContainerComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+  macchine: string[];
+  constructor() {
+     this.macchine = ['Carro', 'Ruspa', 'Gru', 'Moto', 'Bici', 'Monopattino', 'Auto', 'Automobile', 'Autovettura', 'Motocicletta'];
   }
-
+  ngOnInit() {
+  }
 }
